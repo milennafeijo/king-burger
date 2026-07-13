@@ -17,14 +17,6 @@
   position: relative;
 }
 
-.menu-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fbb900;
-  display: inline-flex;
-}
-
 .menu-heading {
   display: flex;
   flex-direction: column;
@@ -91,11 +83,84 @@
 }
 
 .menu-card {
-  display: flex;
-  flex-direction: column;
+  perspective: 1000px;
+  border-radius: 1.6rem;
+  min-height: 300px;
+  cursor: pointer;
+}
+
+.menu-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.menu-card:hover .menu-card-inner {
+  transform: rotateY(180deg);
+}
+
+.menu-card-front,
+.menu-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 1.6rem;
   overflow: hidden;
-  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  transform: rotateY(180deg);
+  background: #d62300;
+  color: #ffffff;
+}
+
+.menu-card-back h3 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: var(--font-title);
+}
+
+.menu-card-back p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-card-back span {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffd100;
+}
+
+.menu-card-front img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
 }
 
 .menu-card--white {
@@ -133,27 +198,6 @@
   padding: 1.35rem 1.2rem;
   justify-content: center;
   text-align: center;
-}
-
-.menu-card--solid h3 {
-  margin: 0;
-  font-size: 2.25rem;
-}
-
-.menu-card--solid p {
-  margin: 0.75rem 0 0;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.92rem;
-  line-height: 1.55;
-}
-
-.menu-card--solid span {
-  margin-top: 1rem;
-  display: inline-block;
-  color: #ffd100;
-  font-size: 1.35rem;
-  font-weight: 800;
-  font-family: var(--font-title);
 }
 
 /* RESPONSIVIDADE DE MENU */

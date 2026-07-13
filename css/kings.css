@@ -47,7 +47,7 @@
   align-items: end;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.5rem 0 0.25rem;
+  padding: 1.5rem 0 0.25rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
