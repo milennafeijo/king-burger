@@ -1,0 +1,116 @@
+
+/* === SEÇÃO OS REIS (THE KINGS CAROUSEL) === */
+
+.kings-section {
+  background-color: #f5ebdc;
+  /* tom creme mais claro */
+  padding: 5rem 1.25rem 6rem;
+}
+
+.kings-section__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.kings-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  margin-bottom: 2.4rem;
+}
+
+.kings-title {
+  margin: 0;
+  font-size: clamp(2.7rem, 5vw, 4.1rem);
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  color: #1b120f;
+  /* tom mais escuro para contraste parecido com a referência */
+}
+
+.kings-subtitle {
+  margin: 0;
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  line-height: 0.95;
+  color: #c28f00;
+  /* tom mostarda/dourado */
+  font-weight: 900;
+  /* deixar em negrito */
+  font-family: 'Titan One', cursive;
+  /* manter a fonte do título */
+}
+
+.kings-carousel {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0 0.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.kings-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.king-card {
+  flex: 0 0 min(260px, 70vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 0.9rem 1.2rem;
+  border-radius: 1.4rem;
+  scroll-snap-align: center;
+}
+
+.king-card--featured {
+  flex-basis: min(360px, 82vw);
+  transform: translateY(-1rem) scale(1.1);
+  z-index: 1;
+}
+
+.king-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1b120f;
+  text-align: center;
+}
+
+.king-card img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 16px 24px rgba(80, 35, 20, 0.18));
+}
+
+.king-card--featured img {
+  max-width: 260px;
+  filter: drop-shadow(0 24px 36px rgba(0, 0, 0, 0.3));
+}
+
+/* RESPONSIVIDADE DA SEÇÃO KINGS */
+@media (max-width: 768px) {
+  .kings-section {
+    padding: 4rem 1rem 5rem;
+  }
+
+  .kings-carousel {
+    justify-content: flex-start;
+  }
+
+  .king-card {
+    flex-basis: min(270px, 78vw);
+  }
+
+  .king-card--featured {
+    transform: none;
+  }
+}

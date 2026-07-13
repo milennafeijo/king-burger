@@ -1,0 +1,199 @@
+/* === SEÇÃO KING EM DOBRO === */
+
+.king-dobro-section {
+  position: relative;
+  min-height: clamp(520px, 54vh, 720px);
+  background: #070707;
+  overflow: hidden;
+  color: #fff;
+}
+
+.king-dobro-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.king-dobro-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.king-dobro-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.king-dobro-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.king-dobro-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+.king-dobro-eyebrow {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.95rem;
+  font-weight: 800;
+  font-family: var(--font-title);
+}
+
+.king-dobro-double {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.king-dobro-double__number {
+  font-size: clamp(5rem, 11vw, 8.5rem);
+  line-height: 0.9;
+  font-weight: 900;
+  font-family: var(--font-title);
+}
+
+.king-dobro-double__label {
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-family: var(--font-title);
+}
+
+.king-dobro-note {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.95rem;
+  font-weight: 800;
+  font-family: var(--font-title);
+}
+
+.king-dobro-price {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.king-dobro-price__symbol,
+.king-dobro-price__decimal {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1;
+  font-weight: 900;
+}
+
+.king-dobro-price__main {
+  font-size: clamp(6rem, 12vw, 10rem);
+  line-height: 0.9;
+  font-weight: 900;
+  font-family: var(--font-title);
+}
+
+.king-dobro-price__decimal {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 0.6rem;
+}
+
+.king-dobro-disclaimer {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.70rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.king-dobro-card {
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-48%);
+  width: min(360px, 35vw);
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 2rem;
+  padding: 1.8rem;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.22);
+  color: #1d1d1d;
+}
+
+.king-dobro-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  text-align: center;
+}
+
+.king-dobro-options {
+  display: flex;
+  gap: 0.65rem;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+
+.king-dobro-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.king-dobro-option img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.king-dobro-option span {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+}
+
+/* RESPONSIVIDADE KING EM DOBRO */
+@media (max-width: 768px) {
+  .king-dobro-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5rem 1.25rem;
+  }
+
+  .king-dobro-card {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 720px;
+    margin-top: 2rem;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16);
+  }
+
+  .king-dobro-options {
+    gap: 0.75rem;
+  }
+}

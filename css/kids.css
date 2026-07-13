@@ -1,0 +1,222 @@
+/* === SEÇÃO KIDS (KINGS JR.) === */
+
+.kids-section {
+  position: relative;
+  background: radial-gradient(circle at 20% 45%, rgb(1, 144, 77), transparent 22%),
+    linear-gradient(135deg, #01904d 0%, #23721a 25%, #01904d 52%, #0d260e 100%);
+  color: #ffffff;
+  overflow: hidden;
+  padding: 6rem 1.25rem;
+}
+
+.kids-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.08), transparent 10%),
+    radial-gradient(circle at 88% 20%, rgba(255, 255, 255, 0.06), transparent 6%);
+  pointer-events: none;
+}
+
+.kids-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 3rem;
+}
+
+.kids-arrow {
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 1.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.kids-arrow--prev {
+  left: 1rem;
+}
+
+.kids-arrow--next {
+  right: 1rem;
+}
+
+.kids-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.4rem;
+  max-width: 520px;
+}
+
+.kids-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  background: #f7ca1e;
+  border-radius: 0.5rem;
+  color: #502314;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.95rem;
+  font-family: var(--font-title);
+}
+
+.kids-title {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 0.95;
+  color: #fff;
+}
+
+.kids-text {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+.kids-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  color: #004D2C;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 0;
+  font-size: 1rem;
+  width: fit-content;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+  font-family: var(--font-title);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kids-button:hover,
+.kids-button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.kids-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 640px;
+}
+
+.kids-slide-card {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 2rem;
+  background: rgba(0, 0, 0, 0.28);
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.35);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kids-slide-card img {
+  width: 100%;
+  height: auto;
+  max-width: 560px;
+  border-radius: 1.75rem;
+  object-fit: cover;
+}
+
+/* RESPONSIVIDADE SEÇÃO KIDS */
+@media (max-width: 1024px) {
+  .kids-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .kids-copy {
+    align-items: center;
+  }
+
+  .kids-button {
+    width: min(280px, 100%);
+  }
+
+  .kids-arrow--prev,
+  .kids-arrow--next {
+    left: auto;
+    right: auto;
+    position: relative;
+    transform: none;
+  }
+
+  .kids-arrow--prev {
+    margin-right: 1rem;
+  }
+
+  .kids-arrow--next {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .kids-section {
+    padding: 3rem 0.75rem 2.5rem;
+  }
+
+  .kids-inner {
+    gap: 1.5rem;
+  }
+
+  .kids-title {
+    font-size: clamp(2rem, 12vw, 2.8rem);
+  }
+
+  .kids-text {
+    max-width: 100%;
+  }
+
+  .kids-button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .kids-slide-card {
+    min-height: 300px;
+  }
+
+  .kids-arrow--prev,
+  .kids-arrow--next {
+    position: absolute;
+    top: calc(50% - 1rem);
+  }
+
+  .kids-arrow--prev {
+    left: 1rem;
+  }
+
+  .kids-arrow--next {
+    right: 1rem;
+  }
+}

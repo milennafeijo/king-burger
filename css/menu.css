@@ -1,0 +1,224 @@
+/* === SEÇÃO NOSSO MENU === */
+
+.menu-section {
+  background: #24150e;
+  color: #ffffff;
+  padding: 6rem 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-inner {
+  width: min(1180px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.menu-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fbb900;
+  display: inline-flex;
+}
+
+.menu-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.menu-heading h2 {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 0.95;
+}
+
+.menu-heading p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+.menu-tabs {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.menu-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-tab {
+  flex: 0 0 auto;
+  padding: 0.85rem 1.35rem;
+  border-radius: 999px;
+  border: none;
+  font-family: var(--font-title);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menu-tab:hover,
+.menu-tab:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.menu-tab--active {
+  background: #d62300;
+}
+
+.menu-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.menu-card--white {
+  background: #ffffff;
+  color: #502314;
+}
+
+.menu-card--white .menu-card__image {
+  width: 100%;
+  min-height: 180px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.menu-card--white .menu-card__image img {
+  width: auto;
+  max-width: 90%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.menu-card--white h3 {
+  margin: 0.85rem 0 0.65rem;
+  padding: 0 0.9rem 0.9rem;
+  font-size: 1.15rem;
+  color: #502314;
+  text-align: center;
+}
+
+.menu-card--solid {
+  background: #d62300;
+  color: #ffffff;
+  padding: 1.35rem 1.2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-card--solid h3 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.menu-card--solid p {
+  margin: 0.75rem 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.menu-card--solid span {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #ffd100;
+  font-size: 1.35rem;
+  font-weight: 800;
+  font-family: var(--font-title);
+}
+
+/* RESPONSIVIDADE DE MENU */
+@media (max-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 4.5rem 1rem 3rem;
+  }
+
+  .menu-tabs {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .menu-card {
+    min-height: 260px;
+  }
+
+  .menu-card--white .menu-card__image {
+    min-height: 160px;
+  }
+
+  .menu-card--solid {
+    padding: 1.2rem 1rem;
+  }
+
+  .menu-card--solid h3 {
+    font-size: 1.15rem;
+  }
+
+  .menu-card--solid p {
+    font-size: 0.9rem;
+  }
+
+  .menu-card--solid span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .menu-tabs {
+    overflow-x: auto;
+    padding-bottom: 0.75rem;
+    margin-bottom: -0.75rem;
+  }
+
+  .menu-tab {
+    flex: 0 0 auto;
+  }
+}

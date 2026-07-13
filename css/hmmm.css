@@ -1,0 +1,212 @@
+/* === SEÇÃO HMMMM (CHICKEN NUGGETS) === */
+
+.hmmm-section {
+  position: relative;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 167, 44, 0.12), transparent 24%),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.05), transparent 18%),
+    linear-gradient(135deg, #1a0307 0%, #3e0206 35%, #6f0f0f 55%, #090505 100%);
+  color: #ffffff;
+  overflow: hidden;
+  padding: 6rem 1.25rem 5rem;
+}
+
+.hmmm-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 18px 18px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.hmmm-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hmmm-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.hmmm-title {
+  margin: 0;
+  font-size: clamp(3.6rem, 7vw, 6.5rem);
+  line-height: 0.95;
+  color: #f5e5c7;
+  letter-spacing: 0.05em;
+}
+
+.hmmm-subtitle {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.2vw, 1.3rem);
+  color: #f8f1e6;
+  font-weight: 700;
+}
+
+.hmmm-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.hmmm-image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.4);
+}
+
+.hmmm-image-card img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 1.75rem;
+  display: block;
+  object-fit: cover;
+}
+
+.hmmm-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hmmm-copy h3 {
+  margin: 0;
+  font-size: clamp(2.3rem, 3.5vw, 3.5rem);
+  line-height: 1.05;
+  color: #ffcb38;
+}
+
+.hmmm-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.hmmm-features {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.hmmm-feature-card {
+  flex: 0 1 calc(33.333% - 0.66rem);
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.hmmm-feature-icon {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+
+.hmmm-feature-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.hmmm-feature-card h4 {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.hmmm-feature-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.88rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* RESPONSIVIDADE SEÇÃO HMMMM */
+@media (max-width: 1024px) {
+  .hmmm-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hmmm-image-card {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hmmm-section {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .hmmm-title {
+    font-size: clamp(2.8rem, 10vw, 4.2rem);
+  }
+
+  .hmmm-subtitle {
+    font-size: 1rem;
+  }
+
+  .hmmm-copy {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hmmm-copy p {
+    max-width: 100%;
+  }
+
+  .hmmm-features {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .hmmm-feature-card {
+    flex: 1 1 100%;
+    min-width: auto;
+    padding: 1rem;
+  }
+
+  .hmmm-feature-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hmmm-feature-icon img {
+    width: 20px;
+    height: 20px;
+  }
+}

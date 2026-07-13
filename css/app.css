@@ -1,0 +1,206 @@
+/* === SEÇÃO DO APLICATIVO (APP) === */
+
+.app-section {
+  background: #502314;
+  color: #f5e5c7;
+  padding: 6rem 1.25rem;
+}
+
+.app-inner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.app-copy {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 560px;
+}
+
+.app-copy__text {
+  margin: 0;
+  color: rgba(245, 229, 199, 0.85);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.app-copy h2 {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: 0.02em;
+}
+
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: #111111;
+  border-radius: 1.4rem;
+  padding: 1rem 1.1rem;
+  color: #ffffff;
+  text-decoration: none;
+  min-width: 175px;
+}
+
+.store-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.store-icon img {
+  width: 1.4rem;
+  height: auto;
+}
+
+.store-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.store-line--small {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.84;
+}
+
+.store-line--big {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.app-mockup {
+  flex: 0 0 420px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-phone-frame {
+  width: min(360px, 100%);
+  background: #111111;
+  border-radius: 3rem;
+  padding: 1rem;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.app-phone-screen {
+  background: #f4e7d5;
+  border-radius: 2.4rem;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-height: 620px;
+}
+
+.app-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 800;
+  color: #2b160f;
+  font-size: 1.05rem;
+}
+
+.app-star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.95rem;
+  background: #d62300;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.app-card {
+  background: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-card-image {
+  min-height: 220px;
+  background: #d5c7b1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-card-divider {
+  height: 6px;
+  background: #f7d74b;
+}
+
+.app-card-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  padding: 1.1rem;
+}
+
+.app-card-actions button {
+  border: none;
+  border-radius: 1.15rem;
+  background: #f2dcc7;
+  color: #4d2e1e;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem;
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+/* RESPONSIVIDADE DE APP */
+@media (max-width: 1024px) {
+  .app-inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .app-copy {
+    align-items: center;
+  }
+
+  .store-badges {
+    justify-content: center;
+  }
+
+  .app-mockup {
+    width: 100%;
+  }
+}

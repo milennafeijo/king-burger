@@ -1,0 +1,95 @@
+/* === RODAPÉ (FOOTER) === */
+
+.footer {
+  background: #2D1006;
+  color: #ffffff;
+  padding: 4rem 1.25rem;
+}
+
+.footer-inner {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.footer-logo .brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  color: #d62300;
+}
+
+.footer-logo .brand-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.footer-label {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-action {
+  width: 3.1rem;
+  height: 3.1rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #2D1006;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-action .material-symbols-outlined {
+  font-size: 1.4rem;
+}
+
+.footer-note {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.72rem;
+  line-height: 1.8;
+}
+
+/* RESPONSIVIDADE DE RODAPÉ */
+@media (max-width: 540px) {
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  .footer-logo .brand-text {
+    font-size: 0.95rem;
+  }
+
+  .footer-note {
+    font-size: 0.65rem;
+  }
+}
