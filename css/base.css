@@ -8,6 +8,10 @@
   --cream: #f9f4ed;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }

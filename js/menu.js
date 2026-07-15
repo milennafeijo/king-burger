@@ -36,6 +36,33 @@ if (siteHeader && mainNav) {
   updateMenuState();
 }
 
+/* === LÓGICA DO MENU MOBILE === */
+const menuToggle = document.querySelector('.menu-toggle');
+const closeMenuBtn = document.querySelector('.close-menu');
+const navMenuLinks = document.querySelectorAll('.nav-menu a');
+const mobileOverlay = document.querySelector('.mobile-overlay');
+
+if (menuToggle && siteHeader) {
+  const openMenu = () => {
+    siteHeader.classList.add('is-open');
+    document.body.style.overflow = 'hidden'; // Evita scroll com menu aberto
+  };
+
+  const closeMenu = () => {
+    siteHeader.classList.remove('is-open');
+    document.body.style.overflow = '';
+  };
+
+  menuToggle.addEventListener('click', openMenu);
+  if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
+  if (mobileOverlay) mobileOverlay.addEventListener('click', closeMenu);
+
+  // Fecha o menu ao clicar em qualquer link de navegação
+  navMenuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+}
+
 /* === LÓGICA DE FILTRO DO MENU === */
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('.menu-tab');

@@ -99,18 +99,33 @@
 /* RESPONSIVIDADE DA SEÇÃO KINGS */
 @media (max-width: 768px) {
   .kings-section {
-    padding: 4rem 1rem 5rem;
+    padding: 3.5rem 1.25rem;
   }
 
   .kings-carousel {
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    overflow-x: visible;
   }
 
   .king-card {
-    flex-basis: min(270px, 78vw);
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 0;
   }
 
   .king-card--featured {
+    flex-basis: auto;
     transform: none;
+    order: -1; /* Coloca o destaque no topo se desejar, ou remova para manter a ordem original */
+  }
+
+  .king-card img {
+    max-width: 280px;
+  }
+
+  .king-card--featured img {
+    max-width: 320px;
   }
 }
