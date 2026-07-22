@@ -2,6 +2,8 @@
 
 Projeto de uma página de hambúrguer como parte do curso **Dev Quest**, com apoio de ferramentas de IA.
 
+<br>
+
 ## Tecnologias utilizadas:
 • HTML5 <br>
 • CSS3 <br>
@@ -28,3 +30,10 @@ Também explorei a integração com o **MCP do Figma**, que facilitou a interpre
 
 Outro ponto importante foi aprender a revisar o próprio código. Durante o desenvolvimento, várias "pontas soltas" apareceram, como pequenos ajustes de layout, organização do CSS, detalhes de responsividade e melhorias na estrutura do projeto. 
 
+<br>
+
+<p align="center">
+  <img src="./public/gif/king-burger-demo.gif" width="600" alt="Demo do King Burger">
+</p>
+
+<p align="center"><em>Demonstração da landing page King Burger</em></p>
