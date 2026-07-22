@@ -52,8 +52,6 @@ h3 {
   border: 0;
 }
 
-/* === REVEAL ANIMATION (Generic) === */
-
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -66,8 +64,6 @@ h3 {
   transform: translateY(0);
 }
 
-/* === REVEAL RIGHT (Slide from Right) === */
-
 .reveal-right {
   opacity: 0;
   transform: translateX(50px);
@@ -79,8 +75,6 @@ h3 {
   opacity: 1;
   transform: translateX(0);
 }
-
-/* === ELASTIC FADE === */
 
 .reveal-elastic {
   opacity: 0;
@@ -101,8 +95,6 @@ h3 {
     transform: scale(1);
   }
 }
-
-/* === JUMP ANIMATION === */
 
 .reveal-jump {
   opacity: 0;

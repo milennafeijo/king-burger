@@ -1,5 +1,3 @@
-/* === SEÇÃO NOSSO MENU === */
-
 .menu-section {
   background: #24150e;
   color: #ffffff;
@@ -160,7 +158,7 @@
   object-fit: contain;
   display: block;
   margin: auto;
-  
+
 }
 
 .menu-card--white {
@@ -170,7 +168,7 @@
 
 .menu-card--white .menu-card__image {
   width: 100%;
-  min-height: 180px;  
+  min-height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,8 +187,8 @@
   border: 3px solid white;
 }
 
-.menu-card__image h2{
-  font-size: 1.20rem;  
+.menu-card__image h2 {
+  font-size: 1.20rem;
 }
 
 .menu-card--white h3 {
@@ -209,7 +207,7 @@
   text-align: center;
 }
 
-/* RESPONSIVIDADE DE MENU */
+
 @media (max-width: 1024px) {
   .menu-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

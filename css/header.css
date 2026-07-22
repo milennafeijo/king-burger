@@ -1,11 +1,9 @@
-/* === CABEÇALHO (HEADER) === */
-
-.site-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .alert-banner {
@@ -21,7 +19,7 @@
 
 .main-nav {
   background: var(--cream);
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.03), 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.03), 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   z-index: 1100;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -171,7 +169,7 @@
   pointer-events: auto;
 }
 
-/* RESPONSIVIDADE DO CABEÇALHO */
+
 @media (max-width: 768px) {
   .alert-banner {
     font-size: 0.6rem;

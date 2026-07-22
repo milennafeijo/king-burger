@@ -1,9 +1,5 @@
-
-/* === SEÇÃO OS REIS (THE KINGS CAROUSEL) === */
-
 .kings-section {
   background-color: #f5ebdc;
-  /* tom creme mais claro */
   padding: 5rem 1.25rem 6rem;
 }
 
@@ -27,7 +23,6 @@
   line-height: 0.95;
   letter-spacing: 0.04em;
   color: #1b120f;
-  /* tom mais escuro para contraste parecido com a referência */
 }
 
 .kings-subtitle {
@@ -35,11 +30,8 @@
   font-size: clamp(2rem, 3.8vw, 2.8rem);
   line-height: 0.95;
   color: #c28f00;
-  /* tom mostarda/dourado */
   font-weight: 900;
-  /* deixar em negrito */
   font-family: 'Titan One', cursive;
-  /* manter a fonte do título */
 }
 
 .kings-carousel {
@@ -96,7 +88,7 @@
   filter: drop-shadow(0 24px 36px rgba(0, 0, 0, 0.3));
 }
 
-/* RESPONSIVIDADE DA SEÇÃO KINGS */
+
 @media (max-width: 768px) {
   .kings-section {
     padding: 3.5rem 1.25rem;
@@ -118,7 +110,7 @@
   .king-card--featured {
     flex-basis: auto;
     transform: none;
-    order: -1; /* Coloca o destaque no topo se desejar, ou remova para manter a ordem original */
+    order: -1;
   }
 
   .king-card img {
