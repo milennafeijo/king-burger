@@ -2,6 +2,8 @@
 
 Projeto de uma página de hambúrguer como parte do curso **Dev Quest**, com apoio de ferramentas de IA.
 
+Acesse o projeto <a href="https://milennafeijo.github.io/king-burger/">aqui</a>
+
 ## Tecnologias utilizadas:
 • HTML5 <br>
 • CSS3 <br>
