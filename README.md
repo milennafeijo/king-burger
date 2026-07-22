@@ -1,6 +1,6 @@
 # Projeto King Burger 
 
-Projeto de uma página de hambúrguer como parte do curso **Dev Quest**, com apoio de ferramentas de IA.
+Projeto de uma página de hambúrguer desenvolvida no curso **Dev Quest**, com apoio de ferramentas de IA.
 
 Acesse o projeto <a href="https://milennafeijo.github.io/king-burger/">aqui</a>
 
