@@ -188,15 +188,15 @@
 }
 
 .menu-card__image h2 {
-  font-size: 1.20rem;
+  font-size: 1.50rem;
 }
 
 .menu-card--white h3 {
-  margin: 0.85rem 0 0.65rem;
-  padding: 0 0.9rem 0.9rem;
   font-size: 1.15rem;
   color: #502314;
   text-align: center;
+  display: flex;
+  
 }
 
 .menu-card--solid {
