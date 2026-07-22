@@ -106,6 +106,7 @@
 
 .hero-visual__frame img {
   display: block; 
+  width: 100%;
   height: auto;
   border-radius: 1.75rem;  
 }
@@ -203,7 +204,7 @@
   }
 
   .hero-title {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-size: clamp(4rem, 8vw, 4.5rem);
   }
 
   .hero-visual {
