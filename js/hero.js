@@ -19,4 +19,3 @@ if (heroContent && heroVisual && heroButton) {
     heroContent.classList.add("hero-show");
     heroVisual.classList.add("hero-show");
   }
-}

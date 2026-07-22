@@ -1,7 +1,3 @@
-// ============================================
-// Kids Menu Carousel Logic
-// ============================================
-
 const initKidsCarousel = () => {
   const slides = [
     'public/images/tartarugas.png',

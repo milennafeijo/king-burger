@@ -36,7 +36,6 @@ if (siteHeader && mainNav) {
   updateMenuState();
 }
 
-/* === LÓGICA DO MENU MOBILE === */
 const menuToggle = document.querySelector('.menu-toggle');
 const closeMenuBtn = document.querySelector('.close-menu');
 const navMenuLinks = document.querySelectorAll('.nav-menu a');
@@ -45,7 +44,7 @@ const mobileOverlay = document.querySelector('.mobile-overlay');
 if (menuToggle && siteHeader) {
   const openMenu = () => {
     siteHeader.classList.add('is-open');
-    document.body.style.overflow = 'hidden'; // Evita scroll com menu aberto
+    document.body.style.overflow = 'hidden';
   };
 
   const closeMenu = () => {
@@ -57,20 +56,20 @@ if (menuToggle && siteHeader) {
   if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
   if (mobileOverlay) mobileOverlay.addEventListener('click', closeMenu);
 
-  // Fecha o menu ao clicar em qualquer link de navegação
+
   navMenuLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
   });
 }
 
-/* === LÓGICA DE FILTRO DO MENU === */
+
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('.menu-tab');
   const cards = document.querySelectorAll('.menu-card');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // Atualiza aba ativa
+
       tabs.forEach(t => t.classList.remove('menu-tab--active'));
       tab.classList.add('menu-tab--active');
 
@@ -78,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       cards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
-        
+
         if (category === 'all' || category === cardCategory) {
           card.style.display = 'flex';
         } else {
