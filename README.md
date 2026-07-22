@@ -2,8 +2,6 @@
 
 Projeto de uma página de hambúrguer como parte do curso **Dev Quest**, com apoio de ferramentas de IA.
 
-<br>
-
 ## Tecnologias utilizadas:
 • HTML5 <br>
 • CSS3 <br>
